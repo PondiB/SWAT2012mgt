@@ -4,7 +4,6 @@
 #' file and writes them to the management files in the selected txtInOut folder.
 #'
 #'
-#' @return
 #' @export
 
 write.SWATmgt <- function(){

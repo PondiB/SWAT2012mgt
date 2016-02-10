@@ -1,14 +1,16 @@
 Package: SWAT2012mgt
 Type: Package
-Title: What the Package Does (Title Case)
+Title: SWAT2012mgt
 Version: 0.1
 Date: 2016-02-09
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Christoph Schürz <christoph.schuerz@boku.ac.at>
+Maintainer: Christoph Schürz <christoph.schuerz@boku.ac.at>
+Description: reads the management operations from the selected csv file and
+             writes them to the management files in the selected txtInOut folder
+License: none
 LazyData: TRUE
 Imports:
     magrittr,
     dplyr
 RoxygenNote: 5.0.1
+
