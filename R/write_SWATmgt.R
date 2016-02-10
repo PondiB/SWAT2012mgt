@@ -3,7 +3,8 @@
 #' \code{write.SWATmgt} reads the management operations from the selected csv
 #' file and writes them to the management files in the selected txtInOut folder.
 #'
-#'
+#' @import dplyr
+#' @importFrom magrittr %<>%
 #' @export
 
 write.SWATmgt <- function(){
