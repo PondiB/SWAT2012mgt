@@ -1,5 +1,6 @@
 check.meta <- function(mgt_name, mgt_file, mgt_data_i){
   mgt_file %<>%
+    .[1] %>%
     strsplit(., "\\ |\\:|\\: ") %>%
     unlist(.) %>%
     list(LUSE = .[grep("Luse", .)+1],
@@ -12,7 +13,7 @@ check.meta <- function(mgt_name, mgt_file, mgt_data_i){
     stop(paste("Landuse of HRU",mgt_name,"differs from MGT input!"))
   }
 
-  if(mgt_file$SOIL != mgt_data_i$DESCRIPT){
+  if(tolower(mgt_file$SOIL) != tolower(mgt_data_i$DESCRIPT)){
     stop(paste("Soil of HRU",mgt_name,"differs from MGT input!"))
   }
 
